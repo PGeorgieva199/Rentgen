@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Language: es : Español :-->
+<xliff version="1.1">
+<file source-language="es" datatype="plaintext" original="locale_es.xml">
+<header />
+<body>
+	<trans-unit resname="EXIT">
+		<source>Salida</source>
+	</trans-unit>
+	<trans-unit resname="DISCLAIMER">
+		<source>No pensado para diagnóstico primario.</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_ARCHIVE_LOG">
+		<source>Archivo de Registros</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_DICOM_STUDIES">
+		<source>Estudios DICOM</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_REPORTS">
+		<source>Reportes</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_DATA">
+		<source>Datos</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_REPORTS_DATA">
+		<source>Reportes / Datos</source>
+	</trans-unit>
+	<trans-unit resname="SELECTVIEWERS">
+		<source>Seleccione el Visor DICOM</source>
+	</trans-unit>
+	<trans-unit resname="ATTACHMENTS">
+		<source>Reportes / Datos</source>
+	</trans-unit>
+	<trans-unit resname="REPORTS">
+		<source>Reportes</source>
+	</trans-unit>
+	<trans-unit resname="DATA">
+		<source>Datos</source>
+	</trans-unit>
+	<trans-unit resname="OPEN">
+		<source>Abrir</source>
+	</trans-unit>
+</body>
+</file>
+</xliff>

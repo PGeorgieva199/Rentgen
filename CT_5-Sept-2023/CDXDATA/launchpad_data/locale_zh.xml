@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Language: zh : 中文 :-->
+<xliff version="1.1">
+<file source-language="zh" datatype="plaintext" original="locale_zh.xml">
+<header />
+<body>
+	<trans-unit resname="EXIT">
+		<source>弹出光盘</source>
+	</trans-unit>
+	<trans-unit resname="DISCLAIMER">
+		<source>仅供参考，不适用于临床诊断使用</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_ARCHIVE_LOG">
+		<source>归档记录</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_DICOM_STUDIES">
+		<source>DICOM影像</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_REPORTS">
+		<source>放射报告</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_DATA">
+		<source>数据</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_REPORTS_DATA">
+		<source>放射报告 / 数据</source>
+	</trans-unit>
+	<trans-unit resname="SELECTVIEWERS">
+		<source>选择DICOM阅片软件…</source>
+	</trans-unit>
+	<trans-unit resname="ATTACHMENTS">
+		<source>放射报告 / 数据</source>
+	</trans-unit>
+	<trans-unit resname="REPORTS">
+		<source>放射报告</source>
+	</trans-unit>
+	<trans-unit resname="DATA">
+		<source>数据</source>
+	</trans-unit>
+	<trans-unit resname="OPEN">
+		<source>打开</source>
+	</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE image_infos SYSTEM "image_infos.dtd">
+
+<image_infos>
+
+	<config>
+		<name>Default</name>
+
+		<image>
+
+		<font charset="0" clipprecision="2" escapement="0" 
+			italic="0" orientation="0" outprecision="1"
+			pitchandfamily="34" quality="1" strikeout="0" underline="0"
+			facename="Arial"
+			height="-12" weight="400"/>
+
+		<block hotspot="NW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="0" yunit="PERCENT"
+			   justification="L">
+			<name>Patient, Study Information</name>
+			<line>
+				<token id="1.1">$IoNfamilyName$  $IoNfirstName$</token>
+			</line>
+			<line>
+				<token id="1.2">$VarPatientAge$</token>
+				<token id="1.3">$[ ]IoNsex$</token>
+				<token id="1.4">$[ ]IoNpatientID$</token>
+			</line>
+			<line>
+				<token id="1.5">$[Acc: ]IoNaccessionNumber$</token>
+			</line>
+			<line>
+				<token id="1.6">$IoNstudyDate$</token>
+			</line>
+		</block>
+
+		<block hotspot="NE"
+			   xpos="100" xunit="PERCENT"
+               ypos="0" yunit="PERCENT"
+	           justification="R">
+			<name>Study/Series Information</name>
+			<line>
+				<token id="2.1">$IoNseriesDescription$</token>
+			</line>
+			<line>
+				<token id="2.2">$IoNimageColumns$x$IoNimageLines$</token>
+			</line>
+			<line>
+				<token id="2.4">$IoNseriesModality$</token>
+			</line>
+			<line>
+				<token>$VarContrastAgentMark$$[  ]VarIsLossy$</token>
+			</line>
+			<line blank="1" />
+			<line>
+			    <token id="2.3">Mag: $VarZoomFactor%.2f$x</token>
+			</line>
+		</block>
+
+		<block hotspot="SW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT"
+			   justification="L">
+			<name>Image Information</name>
+			<line>
+				<token id="3.1">$VarWindowLevels$</token>
+			</line>
+			<line>
+				<token id="3.2">Im $VarImageNumber$/$VarNumberOfImages$</token>
+				<token id="3.3">, #$VarDicomImageNumber$</token>
+			</line>
+		</block>
+
+		<block hotspot="SE"
+		       xpos="100" xunit="PERCENT"
+               ypos="-16" yunit="PIXEL"
+	           justification="R">
+			<name>Hospital, Model</name>
+			<line>
+				<token id="4.4">$IoNimageComment$</token>
+			</line>
+			<line>
+				<token id="4.3">$IoNstationName$</token>
+			</line>
+			<line>
+				<token id="4.1">$IoNmodelName$</token>
+			</line>
+			<line>
+				<token id="4.2">$IoNinstitutionName$</token>
+			</line>
+		</block>
+
+		<block type="tag"
+			   hotspot="SE"
+	           xpos="100" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT">
+			<name>Image Tag</name>
+		</block>
+
+		</image>
+
+		<elt id="1.1" select="1">Patient name</elt>
+		<elt id="1.2" select="1">Patient age</elt>
+		<elt id="1.3" select="1">Patient sex</elt>
+		<elt id="1.4" select="1">Patient ID</elt>
+		<elt id="1.5" select="1">Accession Number</elt>
+		<elt id="1.6" select="1">Study date</elt>
+		<elt id="2.1" select="1">Series description</elt>
+		<elt id="2.2" select="1">Image size</elt>
+		<elt id="2.3" select="1">Zoom factor</elt>
+		<elt id="2.4" select="1">Modality</elt>
+		<elt id="3.1" select="1">Window level</elt>
+		<elt id="3.2" select="1">Image number in series</elt>
+		<elt id="3.3" select="1">DICOM image number</elt>
+		<elt id="4.1" select="1">Model name</elt>
+ 		<elt id="4.2" select="1">Institution name</elt>
+		<elt id="4.3" select="1">Station name</elt>
+   		<elt id="4.4" select="1">Image comment</elt>
+	</config>
+
+	<config>
+		<name>CT default</name>
+
+		<image>
+
+		<font charset="0" clipprecision="2" escapement="0"
+			italic="0" orientation="0" outprecision="1"
+			pitchandfamily="34" quality="1" strikeout="0" underline="0"
+			facename="Arial"
+			height="-12" weight="400"/>
+
+		<block hotspot="NW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="0" yunit="PERCENT"
+			   justification="L">
+			<name>Patient, Study Information</name>
+			<line>
+				<token id="1.1">$IoNfamilyName$  $IoNfirstName$</token>
+			</line>
+			<line>
+				<token id="1.2">$VarPatientAge$</token>
+				<token id="1.3">$[ ]IoNsex$</token>
+				<token id="1.4">$[ ]IoNpatientID$</token>
+			</line>
+			<line>
+				<token id="1.5">$[Acc: ]IoNaccessionNumber$</token>
+			</line>
+			<line>
+				<token id="1.6">$IoNstudyDate$</token>
+			</line>
+		</block>
+
+		<block hotspot="NE"
+			   xpos="100" xunit="PERCENT"
+               ypos="0" yunit="PERCENT"
+	           justification="R">
+			<name>Study/Series Information</name>
+			<line>
+				<token id="2.1">$IoNseriesDescription$</token>
+			</line>
+			<line>
+				<token id="2.2">$IoNimageColumns$x$IoNimageLines$</token>
+			</line>
+			<line>
+				<token>$VarContrastAgentMark$$[  ]VarIsLossy$</token>
+			</line>
+			<line blank="1" />
+			<line>
+			    <token id="2.3">Mag: $VarZoomFactor%.2f$x</token>
+			</line>
+		</block>
+
+		<block hotspot="SW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT"
+			   justification="L">
+			<name>Image Information</name>
+			<line>
+			    <token id="3.4">$#IoNimageCTKvp%.1f[ kV]$</token>
+			</line>
+			<line>
+				<token id="3.5">$IoNimageCTXrayTubeCurrent[ mA]$</token>
+			</line>
+			<line>
+				<token id="3.6">$#IoNsliceThickness%.1f[ mm]$$#[ / ]VarSliceLocation$</token>
+			</line>
+			<line>
+				<token id="3.1">$VarWindowLevels$</token>
+			</line>
+			<line>
+				<token id="3.2">Im $VarImageNumber$/$VarNumberOfImages$</token>
+				<token id="3.3">, #$VarDicomImageNumber$</token>
+			</line>
+		</block>
+
+		<block hotspot="SE"
+		       xpos="100" xunit="PERCENT"
+               ypos="-16" yunit="PIXEL"
+	           justification="R">
+			<name>Hospital, Model</name>
+			<line>
+				<token id="4.4">$IoNimageComment$</token>
+			</line>
+			<line>
+				<token id="4.3">$IoNstationName$</token>
+			</line>
+			<line>
+				<token id="4.1">$IoNmodelName$</token>
+			</line>
+			<line>
+				<token id="4.2">$IoNinstitutionName$</token>
+			</line>
+		</block>
+
+		<block type="tag"
+			   hotspot="SE"
+	           xpos="100" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT">
+			<name>Image Tag</name>
+		</block>
+
+		<block type="calliper" 
+		       hotspot="E"
+		       xpos="-40" xunit="PIXEL"
+			   ypos="-110" yunit="PIXEL">
+			<name>Calliper</name>
+		</block>
+
+		<block type="localizer" 
+		       hotspot="SW"
+		       xpos="0" xunit="PERCENT"
+		       ypos="100" yunit="PERCENT"
+		       showLocalizer="1"
+		       showLocalizerPercentView="25"
+		       showLocalizerBounds="0"
+		       showLocalizerOrientation="1"
+		       showLocalizerFrameNumber="1">
+			<name>Localizer</name>
+		</block>
+
+		</image>
+
+		<elt id="1.1" select="1">Patient name</elt>
+		<elt id="1.2" select="1">Patient age</elt>
+		<elt id="1.3" select="1">Patient sex</elt>
+		<elt id="1.4" select="1">Patient ID</elt>
+		<elt id="1.5" select="1">Accession Number</elt>
+		<elt id="1.6" select="1">Study date</elt>
+		<elt id="2.1" select="1">Series description</elt>
+		<elt id="2.2" select="1">Image size</elt>
+		<elt id="2.3" select="1">Zoom factor</elt>
+		<elt id="3.1" select="1">Window level</elt>
+		<elt id="3.2" select="1">Image number in series</elt>
+		<elt id="3.3" select="1">DICOM image number</elt>
+		<elt id="3.4" select="1">KVP</elt>
+		<elt id="3.5" select="1">Tube current</elt>
+		<elt id="3.6" select="1">Slice thickness and location</elt>
+		<elt id="4.1" select="1">Model name</elt>
+ 		<elt id="4.2" select="1">Institution name</elt>
+		<elt id="4.3" select="1">Station name</elt>
+		<elt id="4.4" select="1">Image comment</elt>
+   
+	</config>
+
+	<config>
+		<name>CT (ACR Information)</name>
+
+		<image>
+
+		<font charset="0" clipprecision="2" escapement="0"
+			italic="0" orientation="0" outprecision="1"
+			pitchandfamily="34" quality="1" strikeout="0" underline="0"
+			facename="Arial"
+			height="-12" weight="400"/>
+
+		<block hotspot="NW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="0" yunit="PERCENT"
+			   justification="L">
+			<name>Patient, Study Information</name>
+			<line>
+				<token id="1.1">$IoNfamilyName$  $IoNfirstName$</token>
+			</line>
+			<line>
+				<token id="1.2">$VarPatientAge$</token>
+				<token id="1.3">$[ ]IoNsex$</token>
+				<token id="1.4">$[ ]IoNpatientID$</token>
+			</line>
+			<line>
+				<token id="1.5">$[Acc: ]IoNaccessionNumber$</token>
+			</line>
+			<line>
+				<token id="1.6">$IoNstudyDate$</token>
+			</line>
+		</block>
+
+		<block hotspot="NE"
+			   xpos="100" xunit="PERCENT"
+               ypos="0" yunit="PERCENT"
+	           justification="R">
+			<name>Study/Series Information</name>
+			<line>
+				<token id="2.1">$IoNseriesDescription$</token>
+			</line>
+			<line>
+				<token id="2.2">$IoNimageColumns$x$IoNimageLines$</token>
+			</line>
+			<line>
+				<token>$VarContrastAgentMark$$[  ]VarIsLossy$</token>
+			</line>
+			<line blank="1" />
+			<line>
+			    <token id="2.3">Mag: $VarZoomFactor%.2f$x</token>
+			</line>
+		
+		</block>
+
+		<block hotspot="SW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT"
+			   justification="L">
+			<name>Image Information</name>
+
+			<line>
+				<token id="ACR.CT.14">$[Series Number: ]IoNseriesNumber$</token>
+			</line>
+			
+			<line>
+				<token id="ACR.CT.6">$[Start Time: ]IoNstudyTime$</token>
+			</line>
+
+			<line>
+				<token id="ACR.CT.24">$[Time of Day: ]IoNseriesTime$</token>
+			</line>
+
+			<line>
+				<token id="ACR.CT.7">$[Tech's ID: ]IoNoperatorsName$</token>
+			</line>
+	
+			<line>
+				<token id="ACR.CT.12">$[Table feed rate: ]IoNimageCTTableFeedPerRotation$</token>
+			</line>
+	
+			<line>
+				<token id="ACR.CT.13">$[Scan Time: ]IoNacquisitionTime$</token>
+			</line>
+			
+			<line>
+				<token id="ACR.CT.13.1">$[Scan Duration: ]Tag00189073$</token>
+			</line>
+			
+			<line>
+				<token id="ACR.CT.22">$[Field of View: ]IoNimageCTReconstructionDiameter$</token>
+			</line>
+
+			<line>
+				<token id="ACR.CT.25">$[Conv. Kernel: ]Tag00181210$</token>
+			</line>
+			
+			<!-- Usually only one will be present:
+				(0018, 9305) Revolution Time (The time in seconds of a complete revolution of the source 
+				around the gantry orbit), and (0018, 1150) Exposure Time (Time of x-ray exposure in msec) -->
+			<line>
+				<token id="ACR.CT.26">$#[Rotation: ]Tag00189305[ ]$$#[Rotation : ]Tag00181150$</token>
+			</line>
+			
+			<line>
+			    <token id="3.4">$#IoNimageCTKvp%.1f[ kV]$</token>
+			</line>
+			<line>
+				<token id="3.5">$IoNimageCTXrayTubeCurrent[ mA]$</token>
+			</line>
+			<line>
+				<token id="3.6">$#IoNsliceThickness%.1f[ mm]$$#[ / ]VarSliceLocation$</token>
+			</line>
+			<line>
+				<token id="3.1">$VarWindowLevels$</token>
+			</line>
+			<line>
+				<token id="3.2">Im $VarImageNumber$/$VarNumberOfImages$</token>
+				<token id="3.3">, #$VarDicomImageNumber$</token>
+			</line>
+		</block>
+
+		<block hotspot="SE"
+		       xpos="100" xunit="PERCENT"
+               ypos="-16" yunit="PIXEL"
+	           justification="R">
+			<name>Hospital, Model</name>
+			<line>
+				<token id="4.4">$IoNimageComment$</token>
+			</line>
+			<line>
+				<token id="4.3">$IoNstationName$</token>
+			</line>
+			<line>
+				<token id="4.1">$IoNmodelName$</token>
+			</line>
+			<line>
+				<token id="4.2">$IoNinstitutionName$</token>
+			</line>
+		</block>
+
+		<block type="tag"
+			   hotspot="SE"
+	           xpos="100" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT">
+			<name>Image Tag</name>
+		</block>
+<!--
+		<block type="calliper" 
+		       hotspot="E"
+		       xpos="-40" xunit="PIXEL"
+			   ypos="-110" yunit="PIXEL">
+			<name>Calliper</name>
+		</block>
+-->
+		<block type="localizer" 
+		       hotspot="SW"
+		       xpos="0" xunit="PERCENT"
+		       ypos="100" yunit="PERCENT"
+		       showLocalizer="1"
+		       showLocalizerPercentView="25"
+		       showLocalizerBounds="0"
+		       showLocalizerOrientation="1"
+		       showLocalizerFrameNumber="1">
+			<name>Localizer</name>
+		</block>
+
+		</image>
+
+		<elt id="1.1" select="1">Patient name</elt>
+		<elt id="1.2" select="1">Patient age</elt>
+		<elt id="1.3" select="1">Patient sex</elt>
+		<elt id="1.4" select="1">Patient ID</elt>
+		<elt id="1.5" select="1">Accession Number</elt>
+		<elt id="1.6" select="1">Study date</elt>
+		<elt id="2.1" select="1">Series description</elt>
+		<elt id="2.2" select="1">Image size</elt>
+		<elt id="2.3" select="1">Zoom factor</elt>
+		<elt id="3.1" select="1">Window level</elt>
+		<elt id="3.2" select="1">Image number in series</elt>
+		<elt id="3.3" select="1">DICOM image number</elt>
+		<elt id="3.4" select="1">KVP</elt>
+		<elt id="3.5" select="1">Tube current</elt>
+		<elt id="3.6" select="1">Slice thickness and location</elt>
+		<elt id="4.1" select="1">Model name</elt>
+ 		<elt id="4.2" select="1">Institution name</elt>
+		<elt id="4.3" select="1">Station name</elt>
+		<elt id="4.4" select="1">Image comment</elt>
+
+		<elt id="ACR.CT.6" select="1">Start Time of Exam</elt>
+		<elt id="ACR.CT.7" select="1">Tech's ID</elt>
+		<elt id="ACR.CT.12" select="1">Table feed rate</elt>
+		<elt id="ACR.CT.13" select="1">Scan Time</elt>
+		<elt id="ACR.CT.13.1" select="1">Scan Duration</elt>
+		<elt id="ACR.CT.14" select="1">Series Number</elt>
+		<elt id="ACR.CT.16" select="1">Size Scale (ruler)</elt>
+		<elt id="ACR.CT.22" select="1">Field of View</elt>
+		<elt id="ACR.CT.24" select="1">Time of Day</elt>
+		<elt id="ACR.CT.25" select="1">Convolution Kernel</elt>
+		<elt id="ACR.CT.26" select="1">Rotation</elt>
+   
+	</config>
+
+	<config>
+		<name>MG default</name>
+
+		<image>
+
+		<font charset="0" clipprecision="2" escapement="0" 
+			italic="0" orientation="0" outprecision="1"
+			pitchandfamily="34" quality="1" strikeout="0" underline="0"
+			facename="Arial"
+			height="-12" weight="400"/>
+
+		<block hotspot="NW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="0" yunit="PERCENT"
+			   justification="L">
+			<name>Patient, Study Information</name>
+			<line>
+				<token id="1.1">$IoNfamilyName$  $IoNfirstName$</token>
+			</line>
+			<line>
+				<token id="1.2">$VarPatientAge$</token>
+				<token id="1.3">$[ ]IoNsex$</token>
+				<token id="1.4">$[ ]IoNpatientID$</token>
+			</line>
+			<line>
+				<token id="1.5">$[Acc: ]IoNaccessionNumber$</token>
+			</line>
+			<line>
+				<token id="1.6">$IoNstudyDate$</token>
+			</line>
+		</block>
+
+		<block hotspot="NE"
+			   xpos="100" xunit="PERCENT"
+               ypos="0" yunit="PERCENT"
+	           justification="R">
+			<name>Study/Series Information</name>
+			<line>
+				<token id="2.1">$IoNseriesDescription$</token>
+			</line>
+			<line>
+				<token id="2.2">$IoNimageColumns$x$IoNimageLines$</token>
+			</line>
+			<line>
+				<token id="2.4">$IoNseriesModality$</token>
+			</line>
+			<line>
+				<token>$VarContrastAgentMark$$[  ]VarIsLossy$</token>
+			</line>
+			<line blank="1" />
+			<line>
+			    <token id="2.3">Mag: $VarZoomFactor%.2f$x</token>
+			</line>
+		</block>
+
+		<block hotspot="SW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT"
+			   justification="L">
+			<name>Image Information</name>
+			<line>
+				<token id="3.01">$[Image Laterality: ]IoNimageLaterality$</token>
+				<token id="3.04">$[ ]Tag00185101$</token>
+			</line>
+			<line>
+				<token id="3.02">$[Orientation Cols: ]IoNpatientOrientationColumns$</token>
+				<token id="3.03">$[ Rows: ]IoNpatientOrientationRows$</token>
+			</line>
+			<line>
+				<token id="3.1">$VarWindowLevels$</token>
+			</line>
+			<line>
+				<token id="3.2">Im $VarImageNumber$/$VarNumberOfImages$</token>
+				<token id="3.3">, #$VarDicomImageNumber$</token>
+			</line>
+		</block>
+
+		<block hotspot="SE"
+		       xpos="100" xunit="PERCENT"
+               ypos="-16" yunit="PIXEL"
+	           justification="R">
+			<name>Hospital, Model</name>
+			<line>
+				<token id="4.4">$IoNimageComment$</token>
+			</line>
+			<line>
+				<token id="4.3">$IoNstationName$</token>
+			</line>
+			<line>
+				<token id="4.1">$IoNmodelName$</token>
+			</line>
+			<line>
+				<token id="4.2">$IoNinstitutionName$</token>
+			</line>
+		</block>
+
+		<block type="tag"
+			   hotspot="SE"
+	           xpos="100" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT">
+			<name>Image Tag</name>
+		</block>
+
+		</image>
+
+		<elt id="1.1" select="1">Patient name</elt>
+		<elt id="1.2" select="1">Patient age</elt>
+		<elt id="1.3" select="1">Patient sex</elt>
+		<elt id="1.4" select="1">Patient ID</elt>
+		<elt id="1.5" select="1">Accession Number</elt>
+		<elt id="1.6" select="1">Study date</elt>
+		<elt id="2.1" select="1">Series description</elt>
+		<elt id="2.2" select="1">Image size</elt>
+		<elt id="2.3" select="1">Zoom factor</elt>
+		<elt id="2.4" select="1">Modality</elt>
+		<elt id="3.01" select="1">Laterality</elt>
+		<elt id="3.02" select="1">Patient Orientation Cols</elt>
+		<elt id="3.03" select="1">Patient Orientation Rows</elt>
+		<elt id="3.04" select="1">View Position</elt>
+		<elt id="3.1" select="1">Window level</elt>
+		<elt id="3.2" select="1">Image number in series</elt>
+		<elt id="3.3" select="1">DICOM image number</elt>
+		<elt id="4.1" select="1">Model name</elt>
+ 		<elt id="4.2" select="1">Institution name</elt>
+		<elt id="4.3" select="1">Station name</elt>
+   		<elt id="4.4" select="1">Image comment</elt>
+	</config>
+
+	<config>
+		<name>MR default</name>
+
+		<image>
+
+		<font charset="0" clipprecision="2" escapement="0"
+			italic="0" orientation="0" outprecision="1"
+			pitchandfamily="34" quality="1" strikeout="0" underline="0"
+			facename="Arial"
+			height="-12" weight="400"/>
+
+		<block hotspot="NW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="0" yunit="PERCENT"
+			   justification="L">
+			<name>Patient, Study Information</name>
+			<line>
+				<token id="1.1">$IoNfamilyName$  $IoNfirstName$</token>
+			</line>
+			<line>
+				<token id="1.2">$VarPatientAge$</token>
+				<token id="1.3">$[ ]IoNsex$</token>
+				<token id="1.4">$[ ]IoNpatientID$</token>
+			</line>
+			<line>
+				<token id="1.5">$[Acc: ]IoNaccessionNumber$</token>
+			</line>
+			<line>
+				<token id="1.6">$IoNstudyDate$</token>
+			</line>
+		</block>
+
+		<block hotspot="NE"
+			   xpos="100" xunit="PERCENT"
+               ypos="0" yunit="PERCENT"
+	           justification="R">
+			<name>Study/Series Information</name>
+			<line>
+				<token id="2.1">$IoNseriesDescription$</token>
+			</line>
+			<line>
+				<token id="2.2">$IoNimageColumns$x$IoNimageLines$</token>
+			</line>
+			<line>
+				<token>$VarContrastAgentMark$$[  ]VarIsLossy$</token>
+			</line>
+			<line blank="1" />
+			<line>
+			    <token id="2.3">Mag: $VarZoomFactor%.2f$x</token>
+			</line>
+		</block>
+
+		<block hotspot="SW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT"
+			   justification="L">
+			<name>Image Information</name>
+			<line>
+				<token id="3.4">$#[ET: ]IoNechoTrainLenght$</token>
+			</line>
+			<line>
+				<token id="3.5">$#[TR: ]IoNrepetitionTime%.1f$</token>
+			</line>
+			<line>
+				<token id="3.6">$#[TE: ]IoNechoTime%.1f$</token>
+			</line>
+			<line>
+				<token id="3.7">$#IoNsliceThickness%.1f[ mm]$$#[ / ]VarSliceLocation$</token>
+			</line>
+			<line>
+				<token id="3.1">$VarWindowLevels$</token>
+			</line>
+			<line>
+				<token id="3.2">Im $VarImageNumber$/$VarNumberOfImages$</token>
+				<token id="3.3">, #$VarDicomImageNumber$</token>
+			</line>
+		</block>
+
+		<block hotspot="SE"
+		       xpos="100" xunit="PERCENT"
+               ypos="-16" yunit="PIXEL"
+	           justification="R">
+			<name>Hospital, Model</name>
+			<line>
+				<token id="4.4">$IoNimageComment$</token>
+			</line>
+			<line>
+				<token id="4.3">$IoNstationName$</token>
+			</line>
+			<line>
+				<token id="4.1">$IoNmodelName$</token>
+			</line>
+			<line>
+				<token id="4.2">$IoNinstitutionName$</token>
+			</line>
+		</block>
+
+		<block type="tag"
+			   hotspot="SE"
+	           xpos="100" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT">
+			<name>Image Tag</name>
+		</block>
+
+		<block type="calliper" 
+		       hotspot="E"
+		       xpos="-40" xunit="PIXEL"
+			   ypos="-110" yunit="PIXEL">
+			<name>Calliper</name>
+		</block>
+		
+		<block type="localizer" 
+		       hotspot="SW"
+		       xpos="0" xunit="PERCENT"
+		       ypos="100" yunit="PERCENT"
+		       showLocalizer="1"
+		       showLocalizerPercentView="25"
+		       showLocalizerBounds="0"
+		       showLocalizerOrientation="1"
+		       showLocalizerFrameNumber="1">
+			<name>Localizer</name>
+		</block>
+		</image>
+
+		<elt id="1.1" select="1">Patient name</elt>
+		<elt id="1.2" select="1">Patient age</elt>
+		<elt id="1.3" select="1">Patient sex</elt>
+		<elt id="1.4" select="1">Patient ID</elt>
+		<elt id="1.5" select="1">Accession Number</elt>
+		<elt id="1.6" select="1">Study date</elt>
+		<elt id="2.1" select="1">Series description</elt>
+		<elt id="2.2" select="1">Image size</elt>
+		<elt id="2.3" select="1">Zoom factor</elt>
+		<elt id="3.1" select="1">Window level</elt>
+		<elt id="3.2" select="1">Image number in series</elt>
+		<elt id="3.3" select="1">DICOM image number</elt>
+		<elt id="3.4" select="1">Echo train length</elt>
+		<elt id="3.5" select="1">Repetition time</elt>
+		<elt id="3.6" select="1">Echo time</elt>
+		<elt id="3.7" select="1">Slice thickness and location</elt>
+		<elt id="4.1" select="1">Model name</elt>
+ 		<elt id="4.2" select="1">Institution name</elt>
+		<elt id="4.3" select="1">Station name</elt>
+		<elt id="4.4" select="1">Image comment</elt>
+   	</config>
+
+	<config>
+		<name>MR (ACR information)</name>
+
+		<image>
+
+		<font charset="0" clipprecision="2" escapement="0"
+			italic="0" orientation="0" outprecision="1"
+			pitchandfamily="34" quality="1" strikeout="0" underline="0"
+			facename="Arial"
+			height="-12" weight="400"/>
+
+		<block hotspot="NW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="0" yunit="PERCENT"
+			   justification="L">
+			<name>Patient, Study Information</name>
+			<line>
+				<token id="1.1">$IoNfamilyName$  $IoNfirstName$</token>
+			</line>
+			<line>
+				<token id="1.2">$VarPatientAge$</token>
+				<token id="1.3">$[ ]IoNsex$</token>
+				<token id="1.4">$[ ]IoNpatientID$</token>
+			</line>
+			<line>
+				<token id="1.5">$[Acc: ]IoNaccessionNumber$</token>
+			</line>
+			<line>
+				<token id="1.6">$IoNstudyDate$</token>
+			</line>
+		</block>
+
+		<block hotspot="NE"
+			   xpos="100" xunit="PERCENT"
+               ypos="0" yunit="PERCENT"
+	           justification="R">
+			<name>Study/Series Information</name>
+			<line>
+				<token id="2.1">$IoNseriesDescription$</token>
+			</line>
+			<line>
+				<token id="2.2">$IoNimageColumns$x$IoNimageLines$</token>
+			</line>
+			<line>
+				<token>$VarContrastAgentMark$$[  ]VarIsLossy$</token>
+			</line>
+			<line blank="1" />
+			<line>
+			    <token id="2.3">Mag: $VarZoomFactor%.2f$x</token>
+			</line>
+			
+		</block>
+
+		<block hotspot="SW"
+			   xpos="0" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT"
+			   justification="L">
+			<name>Image Information</name>
+			
+			<line>
+			    <token id="ACR.MR.10">$[Flip Angle: ]IoNflipAngle$</token>
+			</line>
+<!--			
+			<line>
+			    <token id="ACR.MR.12">$[TODO Slice Localizer: ]IoNinversionTime$</token>
+			</line>
+-->			
+			<line>
+			    <token id="ACR.MR.13">$[Interslice Gap: ]IoNspacingBetweenSlices$</token>
+			</line>
+			
+			<line>
+			    <token id="ACR.MR.14">$[Field of View: ]IoNimageMRReconstructionDiameter$</token>
+			</line>
+			
+			<line>
+			    <token id="ACR.MR.15">$[Acquisition Matrix: ]VarMRAcquisitionMatrix$</token>
+			</line>
+			<!-- IoNnumberOfPhaseEncodingSteps -->
+			
+			<line>
+				<token id="ACR.MR.16">$[Scan Time: ]IoNacquisitionTime$</token>
+			</line>
+			
+			<line>
+				<token id="ACR.MR.16.1">$[Scan Duration: ]Tag00189073$</token>
+			</line>
+			
+			<line>
+			    <token id="ACR.MR.18">$[Laterality: ]VarSliceLocation$</token>
+			</line>
+<!--			
+			<line>
+			    <token id="ACR.MR.18">$[TODO Slice Relative Location: ]VarSliceLocation$</token>
+			</line>
+-->
+			<line>
+				<token id="3.4">$[ET: ]IoNechoTrainLenght$</token>
+			</line>
+			<line>
+				<token id="3.5">$[TR: ]IoNrepetitionTime%.1f$</token>
+			</line>
+			<line>
+				<token id="3.6">$[TE: ]IoNechoTime%.1f$</token>
+			</line>
+			<line>
+			    <token id="ACR.MR.9">$[TI: ]IoNinversionTime$</token>
+			</line>
+			<line>
+				<token id="3.7">$IoNsliceThickness%.1f[ mm]$$[ / ]VarSliceLocation$</token>
+			</line>
+			<line>
+				<token id="3.1">$VarWindowLevels$</token>
+			</line>
+			<line>
+				<token id="3.2">Im $VarImageNumber$/$VarNumberOfImages$</token>
+				<token id="3.3">, #$VarDicomImageNumber$</token>
+			</line>
+		</block>
+
+		<block hotspot="SE"
+		       xpos="100" xunit="PERCENT"
+               ypos="-16" yunit="PIXEL"
+	           justification="R">
+			<name>Hospital, Model</name>
+			<line>
+				<token id="4.4">$IoNimageComment$</token>
+			</line>
+			<line>
+				<token id="4.3">$IoNstationName$</token>
+			</line>
+			<line>
+				<token id="4.1">$IoNmodelName$</token>
+			</line>
+			<line>
+				<token id="4.2">$IoNinstitutionName$</token>
+			</line>
+		</block>
+
+		<block type="tag"
+			   hotspot="SE"
+	           xpos="100" xunit="PERCENT"
+			   ypos="100" yunit="PERCENT">
+			<name>Image Tag</name>
+		</block>
+<!--
+		<block type="calliper" 
+		       hotspot="E"
+		       xpos="-40" xunit="PIXEL"
+			   ypos="-110" yunit="PIXEL">
+			<name>Calliper</name>
+		</block>
+-->		
+		<block type="localizer" 
+		       hotspot="SW"
+		       xpos="0" xunit="PERCENT"
+		       ypos="100" yunit="PERCENT"
+		       showLocalizer="1"
+		       showLocalizerPercentView="25"
+		       showLocalizerBounds="0"
+		       showLocalizerOrientation="1"
+		       showLocalizerFrameNumber="1">
+			<name>Localizer</name>
+		</block>
+		</image>
+
+		<elt id="1.1" select="1">Patient name</elt>
+		<elt id="1.2" select="1">Patient age</elt>
+		<elt id="1.3" select="1">Patient sex</elt>
+		<elt id="1.4" select="1">Patient ID</elt>
+		<elt id="1.5" select="1">Accession Number</elt>
+		<elt id="1.6" select="1">Study date</elt>
+		<elt id="2.1" select="1">Series description</elt>
+		<elt id="2.2" select="1">Image size</elt>
+		<elt id="2.3" select="1">Zoom factor</elt>
+		<elt id="3.1" select="1">Window level</elt>
+		<elt id="3.2" select="1">Image number in series</elt>
+		<elt id="3.3" select="1">DICOM image number</elt>
+		<elt id="3.4" select="1">Echo train length</elt>
+		<elt id="3.5" select="1">Repetition time</elt>
+		<elt id="3.6" select="1">Echo time</elt>
+		<elt id="3.7" select="1">Slice thickness and location</elt>
+		<elt id="4.1" select="1">Model name</elt>
+ 		<elt id="4.2" select="1">Institution name</elt>
+		<elt id="4.3" select="1">Station name</elt>
+		<elt id="4.4" select="1">Image comment</elt>
+
+		<elt id="ACR.MR.9" select="1">TI</elt>
+		<elt id="ACR.MR.10" select="1">Flip Angle</elt>
+		<elt id="ACR.MR.12" select="1">Slice Localizer</elt>
+		<elt id="ACR.MR.13" select="1">Interslice Gap</elt>
+		<elt id="ACR.MR.14" select="1">Field of View</elt>
+		<elt id="ACR.MR.15" select="1">Acquisition Matrix</elt>
+		<elt id="ACR.MR.16" select="1">Scan Time</elt>
+		<elt id="ACR.MR.16.1" select="1">Scan Duration</elt>
+		<elt id="ACR.MR.17" select="1">Size Scale (ruler)</elt>
+		<elt id="ACR.MR.18" select="1">Laterality</elt>
+		<elt id="ACR.MR.19" select="1">Slice Relative Location</elt>
+   
+   	</config>
+
+</image_infos>

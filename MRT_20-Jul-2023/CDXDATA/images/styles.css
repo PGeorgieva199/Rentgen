@@ -1,0 +1,321 @@
+body,td {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+body {
+	background-color: #333333;
+	padding: 0 10px 10px 8px;
+}
+
+#advanced_content {
+	display: none;
+	position: absolute;
+}
+
+#basic_content {
+	display: none;
+	position: absolute;
+}
+
+#layout {
+	margin-left: 0;
+	margin-right: 0;
+	width: 975px;
+}
+
+form {
+	margin-bottom: 0px;
+}
+
+.tabs {
+	position: relative;
+	top: 8 !important;
+	top: 0;
+	left: 10px;
+	z-index: 2;
+}
+
+.tab-on {
+	background-image: url(tab-middle-on.gif);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+.tab-off {
+	background-image: url(tab-middle-off.gif);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+.tabPieces  {
+	padding: 8px 0px;
+	margin-top: 1px;
+}
+.tab-on p,.tab-off p {
+	font-size: 21px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	padding: 10px 30px 8px 30px;
+	white-space: nowrap;
+}
+
+.tabContent {
+	background-color: #138CA6;
+	border: 3px solid #B5E6FF;
+	padding: 10px 10px 9px 10px !important;
+	padding: 10px 9px 9px 9px;
+	margin-bottom: 8px;
+	position: relative;
+	top: -4px;
+	left: 10px;
+	z-index: 1;
+	width: 972px !important;
+	width: 998px;
+}
+
+/* button bar above list */
+.window-top {
+	width: 974px;
+	margin-bottom: 7px;
+}
+
+/* BEGIN LIST VIEW STUFF */ /* list view width and color */
+.listView {
+	background-color: #ECF6F8;
+	width: 974px;
+}
+
+/* list view column headings */
+.listView th {
+	background-color: #138CA6;
+	padding-right: 2px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #0b5974;
+}
+
+.listView th.lastColumn {
+	padding-right: 0px;
+}
+
+/* column head tables inside the TH cells */
+.columnHead {
+	background-image: url(../images/colhead-middle-off.jpg);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+
+.columnHead td,.columnHead-selected td,.columnHeadSmall-selected td {
+	border-bottom-style: none;
+}
+
+.columnHead td a,.columnHead-selected td a,.columnHeadSmall-selected td a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 15px 2px 12px;
+	text-align: center;
+	display: block;
+	cursor: default;
+}
+
+.selected td,.partially_selected td, .selectedSeries td,.unselected td,.unselectedjob td,.confirmRow td,.attachment td {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #0b5974;
+	height: 45px;
+	border-right-width: 2px;
+	border-right-style: solid;
+	border-right-color: #0b5974;
+	color: black;
+	padding: 1px 0px 1px 10px;
+	font-weight: bold;
+}
+
+.listView tr.selected {
+	background-color: #A3D9EB;
+}
+
+#readmeInfo {
+	text-align: center;
+	width: 1000px;
+}
+
+#readmeInfo p {
+	font-size: .9em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+
+#reportList-div {
+	background: none repeat scroll 0 0 #138CA6;
+    border: 3px solid #B5E6FF;
+	font-weight: bold;
+    left: 500px; /* 700 - 200 ~= right side of the Reports link  */
+    position: absolute;
+	text-align: center;
+    top: 45px; /* bottom of the Reports link */
+    visibility: hidden;
+    width: 200px;
+    z-index: 105;
+}
+
+#tooltip-div {
+	background: none repeat scroll 0 0 #138CA6;
+    border: 3px solid #B5E6FF;
+	font-weight: bold;
+	left: 0px;
+    position: absolute;
+	text-align: center;
+	top: 0px;
+    visibility: hidden;
+    z-index: 105;
+}
+
+#imageViewer-div {
+	background: none repeat scroll 0 0 #138CA6;
+    border: 3px solid #B5E6FF;
+	font-weight: bold;
+	height: 636; /* 40 + max(3*168 + 59, 512 + 20 + 60) */
+    left: 16;
+    _left: 0; /* hack to make IE6/7 use position:fixed behavior */
+    position: fixed;
+    _position: absolute; /* hack to make IE6/7 use position:fixed behavior */
+    top: 8;
+    _top: expression(eval(document.body.scrollTop)); /* hack to make IE6/7 use position:fixed behavior */
+    visibility: hidden;
+    width: 706px; /* 184 + 512 + 10px to support IE */
+    z-index: 100;
+}
+
+#imageViewer-infoPane {
+	left: 0px;
+	display: block;
+	height: 40px; /* 2 text rows */
+	margin-left: 4px;
+	margin-right: 4px;
+	overflow: hidden;
+	position: absolute;
+	text-align: left;
+	width: 100%;
+	white-space: nowrap;
+}
+
+#PatientStudyInfoCell {
+	overflow: hidden;
+	width: 525px;
+}
+
+#BackToStudiesListCell {
+	left: 537px; /* 525 from PatientStudyInfoCell + 12 for all browsers seems to work! */
+	overflow: hidden;
+	position: absolute;
+	text-align: right;
+	top: 0px;
+	width: 155px;
+}
+
+#imageViewer-infoPane td {
+	font-weight: bold;
+}
+
+#imageViewer-viewPane {
+    left: 184px;
+    position: absolute;
+	top: 40px;
+    width: 512px;
+}
+
+#imageViewer-foot {
+    bottom: 0;
+    font-size: large;
+    font-weight: bold;
+	height: 60px;
+    left: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#imageViewer-foot span {
+	font-size: 25px;
+}
+
+#imageViewer-foot table {
+	border: none;
+	border-collapse: collapse;
+	width: 80%; /* keeps navigation buttons close together */
+	margin: 0 auto;
+}
+
+#warningTextCell {
+	font-size: 12px;
+}
+
+#current-page {
+	border:1px solid #000;
+	font-size: 21px;
+	font-weight: bold;
+	height:30px; /* modern browsers */
+	line-height:21px; /* IE */
+	padding:5px;
+	text-align:center;
+	width:60px;
+}
+
+#image-body-div, #image-body-table-cell {
+    height: 512px;
+    overflow: hidden;
+    width: 512px;
+}
+
+#imageViewer-seriesPane {
+	left: 0px;
+	position: absolute;
+	text-align: center;
+	top: 40px;
+	width: 184px;
+}
+
+#scrollSeriesUp , #scrollSeriesDown{
+	cursor: pointer;
+	display: none;
+}
+
+.imageViewer-seriesPane-study {
+	cursor: pointer;
+	display: block;
+	text-align: center;
+}
+
+.imageViewer-seriesPane-study img {
+	height: 128px;
+}
+
+.seriesPreviewCell {
+	border: 2px solid #138CA6;
+	margin: 4px;
+	overflow: hidden;
+	width: 172px;
+	white-space: nowrap;
+}
+
+.seriesPreviewCellHidden {
+	display: none;
+}
+
+.seriesPreviewCellSelected {
+	border: 2px solid #A3D9EB;
+}
+
+.image-nav-button {
+	cursor:pointer;
+}
+
+img.disabled {
+	cursor:default;
+}

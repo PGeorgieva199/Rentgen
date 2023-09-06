@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Language: ja : 日本語 :-->
+<xliff version="1.1">
+<file source-language="ja" datatype="plaintext" original="locale_ja.xml">
+<header />
+<body>
+	<trans-unit resname="EXIT">
+		<source>終了</source>
+	</trans-unit>
+	<trans-unit resname="DISCLAIMER">
+		<source>このビューワは読影用ではありません。参照用としてご利用下さい。</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_ARCHIVE_LOG">
+		<source>ログ収集</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_DICOM_STUDIES">
+		<source>DICOMデータ検査</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_REPORTS">
+		<source>レポート</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_DATA">
+		<source>データ</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_REPORTS_DATA">
+		<source>レポート／データ</source>
+	</trans-unit>
+	<trans-unit resname="SELECTVIEWERS">
+		<source>DICOMビューワ選択 ...</source>
+	</trans-unit>
+	<trans-unit resname="ATTACHMENTS">
+		<source>レポート／データ</source>
+	</trans-unit>
+	<trans-unit resname="REPORTS">
+		<source>レポート</source>
+	</trans-unit>
+	<trans-unit resname="DATA">
+		<source>データ</source>
+	</trans-unit>
+	<trans-unit resname="OPEN">
+		<source>開く</source>
+	</trans-unit>
+</body>
+</file>
+</xliff>

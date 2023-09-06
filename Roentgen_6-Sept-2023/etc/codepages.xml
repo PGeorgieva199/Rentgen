@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<codepagemapping>
+
+  <codepage
+    name = "Cyrillic"
+    DICOMcp="ISO_IR 144"
+    ISOcp="ISO-8859-5"
+    ANSIcp = "CP1251" />
+
+  <codepage
+    name = "Arabic"
+    DICOMcp="ISO_IR 127"
+    ISOcp="ISO-8859-6"
+    ANSIcp = "CP1256" />
+
+  <codepage
+    name = "Greek"
+    DICOMcp="ISO_IR 126"
+    ISOcp="ISO-8859-7"
+    ANSIcp = "CP1253" />
+
+  <codepage
+    name = "Hebrew"
+    DICOMcp="ISO_IR 138"
+    ISOcp="ISO-8859-8"
+    ANSIcp = "CP1255" />
+
+</codepagemapping>

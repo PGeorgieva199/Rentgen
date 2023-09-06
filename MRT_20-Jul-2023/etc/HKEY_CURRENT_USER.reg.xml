@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<registry>
+	<section name="Software">
+		<section name="MEDASYS">
+			<section name="DxMM">
+				<!-- ================== BEGIN =========================== -->
+				<!-- Predefined Window Level and associated shortcut keys -->
+			
+				<section name="ContrastShortcutConfigs">
+					<section name="CT">
+						<section name="Keys">
+							<value name="F2" type="string">Chest</value>
+							<value name="F3" type="string">Lung</value>
+							<value name="F4" type="string">Brain</value>
+							<value name="F5" type="string">Bone</value>
+							<value name="F6" type="string">Head/Neck</value>
+							<value name="F7" type="string"/>
+							<value name="F8" type="string"/>
+							<value name="F9" type="string"/>
+							<value name="F10" type="string"/>
+							<value name="F11" type="string"/>
+							<value name="F12" type="string"/>
+						</section>
+						<section name="ListWL">
+							<section name="Chest">
+								<value name="Min" type="binary">000007C3</value>
+								<value name="Max" type="binary">00005643</value>
+							</section>
+							<section name="Lung">
+								<value name="Min" type="binary">00C0A8C4</value>
+								<value name="Max" type="binary">00001543</value>
+							</section>
+							<section name="Brain">
+								<value name="Min" type="binary">00000000</value>
+								<value name="Max" type="binary">00009E42</value>
+							</section>
+							<section name="Bone">
+								<value name="Min" type="binary">008040C4</value>
+								<value name="Max" type="binary">0020D844</value>
+							</section>
+							<section name="Head/Neck">
+								<value name="Min" type="binary">0000AAC2</value>
+								<value name="Max" type="binary">00008443</value>
+							</section>
+						</section>
+					</section> <!-- CT -->
+				</section> <!-- ContrastShortcutConfigs -->
+
+				<!-- ================== BEGIN =========================== -->
+				<!-- WL settings -->
+
+				<section name="WL">
+					<value name="flags" type="dword">31</value>
+				</section>
+				
+				<!-- Codonics Mammography default settings -->
+				<section name="DisplaySessionConfigs">
+				  <value name="Number" type="dword">1</value>
+					<section name="Config0">
+						<value name="Modality" type="string">MG</value>
+						<value name="ImInformation" type="string">MG default</value>
+						<value name="Prescale" type="string">Default</value>
+					</section> <!-- Config0 -->
+				</section> <!-- DisplaySessionConfigs -->
+			
+			</section> <!-- DxMM -->
+		</section> <!-- Medasys -->
+	</section> <!-- Software -->
+</registry>

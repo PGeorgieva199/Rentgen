@@ -1,0 +1,52 @@
+<!ELEMENT image_infos (config+)>
+
+<!ELEMENT config (name, window?, image?, elt+)>
+<!ATTLIST config
+  showorientation (0|1) "1">
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT window (font?, block+)>
+<!ELEMENT image (font?, block+)>
+
+<!ELEMENT font EMPTY>
+<!ATTLIST font
+  charset			CDATA "0"
+  clipprecision		CDATA "2"
+  escapement		CDATA "0"
+  facename			CDATA "MS Sans Serif"
+  height			CDATA "-8"
+  italic			CDATA "0"
+  orientation		CDATA "0"
+  outprecision		CDATA "1"
+  pitchandfamily	CDATA "34"
+  quality			CDATA "1"
+  strikeout			CDATA "0"
+  underline			CDATA "0"
+  weight			CDATA "400"
+  width				CDATA "0"
+  red				CDATA "255"
+  green				CDATA "255"
+  blue				CDATA "255">
+
+<!ELEMENT block (font?, line*)>
+<!ATTLIST block
+  type		(text|tag|calliper|localizer|ownerdrawn)	"text"
+  hotspot	(NW|N|NE|W|C|E|SW|S|SE)		#REQUIRED
+  xpos		CDATA						#REQUIRED
+  xunit		(PERCENT|PIXEL)				"PERCENT"
+  ypos		CDATA						#REQUIRED
+  yunit		(PERCENT|PIXEL)				"PERCENT"
+  justification (L|C|R)					#REQUIRED>
+
+<!ELEMENT line (token*)>
+<!ATTLIST line
+  blank     (0|1)		"0">
+
+<!ELEMENT token (#PCDATA)>
+<!ATTLIST token
+  id	CDATA #IMPLIED>
+
+<!ELEMENT elt (#PCDATA)>
+<!ATTLIST elt
+  id		CDATA #REQUIRED
+  select	(0|1) "1">

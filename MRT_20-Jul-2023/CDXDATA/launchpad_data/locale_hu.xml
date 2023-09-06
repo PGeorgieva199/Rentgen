@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Language: hu : Magyar :-->
+<xliff version="1.1">
+<file source-language="hu" datatype="plaintext" original="locale_hu.xml">
+<header />
+<body>
+	<trans-unit resname="EXIT">
+		<source>Kilépés</source>
+	</trans-unit>
+	<trans-unit resname="DISCLAIMER">
+		<source>Nincs előirányozva az elsődleges értékelésre.</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_ARCHIVE_LOG">
+		<source>Archív log</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_DICOM_STUDIES">
+		<source>DICOM tanulmányok</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_REPORTS">
+		<source>Jelentések</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_DATA">
+		<source>Adat</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_REPORTS_DATA">
+		<source>Jelentések / Adat</source>
+	</trans-unit>
+	<trans-unit resname="SELECTVIEWERS">
+		<source>Select DICOM Viewer...</source>
+	</trans-unit>
+	<trans-unit resname="ATTACHMENTS">
+		<source>Jelentések / Adat</source>
+	</trans-unit>
+	<trans-unit resname="REPORTS">
+		<source>Jelentések</source>
+	</trans-unit>
+	<trans-unit resname="DATA">
+		<source>Adat</source>
+	</trans-unit>
+	<trans-unit resname="OPEN">
+		<source>Megnyit</source>
+	</trans-unit>
+</body>
+</file>
+</xliff>

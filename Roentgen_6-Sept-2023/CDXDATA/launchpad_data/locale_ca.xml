@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Language: ca : Català :-->
+<xliff version="1.1">
+<file source-language="ca" datatype="plaintext" original="locale_ca.xml">
+<header />
+<body>
+	<trans-unit resname="EXIT">
+		<source>Sortida</source>
+	</trans-unit>
+	<trans-unit resname="DISCLAIMER">
+		<source>No pretès per interpretació primària.</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_ARCHIVE_LOG">
+		<source>Registres d'arxiu</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_DICOM_STUDIES">
+		<source>Estudis DICOM</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_REPORTS">
+		<source>Informes</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_DATA">
+		<source>Dades</source>
+	</trans-unit>
+	<trans-unit resname="BUTTON_REPORTS_DATA">
+		<source>Informes/Dades</source>
+	</trans-unit>
+	<trans-unit resname="SELECTVIEWERS">
+		<source>Seleccioneu el visualitzador DICOM</source>
+	</trans-unit>
+	<trans-unit resname="ATTACHMENTS">
+		<source>Informes/Dades</source>
+	</trans-unit>
+	<trans-unit resname="REPORTS">
+		<source>Informes</source>
+	</trans-unit>
+	<trans-unit resname="DATA">
+		<source>Dades</source>
+	</trans-unit>
+	<trans-unit resname="OPEN">
+		<source>Obert</source>
+	</trans-unit>
+</body>
+</file>
+</xliff>

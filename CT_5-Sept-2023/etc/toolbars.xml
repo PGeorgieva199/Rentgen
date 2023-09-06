@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE toolbars SYSTEM "toolbars.dtd">
+
+<toolbars>
+
+  <toolbar name="standard" state="false" customizable="false" visible="true">
+    <button id="ID_CLOSESELECTION" />
+    <button id="ID_OPENSELECTION" />
+    <separator />
+    <button id="ID_FILE_PRINT" />
+    <button id="ID_FILE_PRINT_PREVIEW" />
+	<button id="ID_FILE_SAVE_AS" />
+
+    <separator />
+    <button id="ID_MM_TILE" />
+    <separator />
+<!--    <button id="ID_ROTATE_90" />
+    <button id="ID_ROTATE_270" />
+    <button id="ID_FLIP_HORIZONTAL" />
+    <button id="ID_FLIP_VERTICAL" />
+    <button id="ID_FLIP_ROTATE_RESET" />
+    <separator />
+    <button id="ID_INVERT_STACK" />
+    <separator />
+-->
+    <button id="ID_MAGNIFIER" />
+    <button id="ID_MM_FIT" />
+    <separator />
+    <button id="ID_RESETWL" /> 
+    <button id="ID_INVERSE_VIDEO" />
+<!--    <button id="ID_DISP_BY_FRAME" /> 
+    <button id="ID_CNT_BY_FRAME" /> 
+-->
+    <button id="ID_REFERENCELINES_SHOW" />
+<!--    <button id="ID_REFERENCELINES_BOUNDS" />
+    <button id="ID_REFERENCELINES_ALLRANGE" />
+-->
+    <separator />
+    <button id="ID_SYNC_SLICES_AUTO" />
+    <button id="ID_SYNC_CLONE_SLICES" />    
+  </toolbar>
+
+  <toolbar name="graphic" state="false" customizable="false" visible="true">
+    <button id="ID_GRAPHICTOOLS" />
+    <button id="ID_GRSELECT_OBJ" />
+    <separator />
+    <button id="ID_GRRECTANGLE" />
+    <button id="ID_GRELLIPSE" />
+    <button id="ID_GRPOLYGONE" />
+  </toolbar>
+
+  <toolbar name="processing" state="false" customizable="false" visible="true">
+    <button id="ID_MESLINE" />
+    <button id="ID_MESANGLE" />
+    <button id="ID_MESADVANGLE" />
+    <button id="ID_MESPOINT" />
+    <separator />
+    <button id="ID_MESCALIBRATION" />
+    <separator />
+    <button id="ID_MESSTATS" />
+    <button id="ID_MESROIMAXAVG" />
+  </toolbar>
+
+  <toolbar name="mosaic" state="false" customizable="false" visible="true">
+    <button id="ID_BACKWARD" />
+    <button id="ID_FORWARD" />
+    <button id="ID_PAGEBACKWARD" />
+    <button id="ID_PAGEFORWARD" />
+    <button id="ID_MOSAICCUSTOM" />
+<!--    <button id="ID_MOSAIC1_1" />
+    <button id="ID_MOSAIC1_2" />
+    <button id="ID_MOSAIC2_1" />
+    <button id="ID_MOSAIC2_2" />
+    <button id="ID_MOSAIC1_4" />
+    <button id="ID_MOSAIC2_4" />
+    <button id="ID_MOSAIC3_4" />
+    <button id="ID_MOSAIC4_4" />
+    <button id="ID_MOSAICINCREASE" />
+    <button id="ID_MOSAICDECREASE" />
+-->
+    <separator />
+    <button id="ID_CINELOOP_DECR_SPEED" />
+    <button id="ID_CINELOOP_PAUSE" />
+    <button id="ID_CINELOOP_STOP" />
+    <button id="ID_CINELOOP_INCR_SPEED" />
+<!--    <button id="ID_CINESHUFFLE" />
+-->
+  </toolbar>
+
+  <toolbar name="mouse" state="false" customizable="false" visible="true">
+    <button id="ID_LBUTTON_DWL" />
+    <button id="ID_LBUTTON_ROAM" />
+    <button id="ID_LBUTTON_ZOOM" />
+    <button id="ID_LBUTTON_STACK" />
+    <button id="ID_LBUTTON_DRAG" />
+  </toolbar>
+
+  <toolbar name="advanced" state="false" customizable="false" visible="true">
+<!--    <button id="ID_MM_ORTHOVIEW" />
+-->
+    <button id="ID_MM_MPRMIP" />
+    <button id="ID_MM_FUSION" />
+  </toolbar>
+
+  <order>
+    <toolbar name="DOCKBAR_TOP" />
+    <toolbar name="standard" />
+    <toolbar name="advanced" />
+    <toolbar name="processing" />
+    <toolbar name="graphic" />
+    <toolbar name="mosaic" />
+    <toolbar name="mouse" />
+  </order>
+
+</toolbars>
